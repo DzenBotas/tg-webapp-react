@@ -9,9 +9,9 @@ function App() {
     tg.ready();
 }, [])
 
-  const onClose = () => {
-    tg.close()
-  }
+  // const onClose = () => {
+  //   tg.close()
+  // }
 
   return (
     <div className="App">
