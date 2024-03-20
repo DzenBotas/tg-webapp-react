@@ -1,5 +1,5 @@
 import React from 'react';
-// import Button from "../button/button";
+import Button from "../Button/Button";
 import './Header.css';
 import { useTelegram } from '../../hooks/useTelegram';
 
@@ -9,7 +9,7 @@ const Header = () => {
     
     return (
         <div className={'header'}>
-            <button onClick={onClose}>Close</button>
+            <Button onClick={onClose}>Close</Button>
             <span className={'username'}>{user?.username}</span>
         </div>
     );
