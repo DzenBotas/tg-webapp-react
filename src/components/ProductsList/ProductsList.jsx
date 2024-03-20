@@ -38,14 +38,14 @@ const ProductsList = () => {
             },
             body: JSON.stringify(data)
         })
-    }, [addedItems])
+    }, [addedItems, tg, queryId])
 
     useEffect(() => {
         tg.onEvent('mainButtonClicked', onSendData)
         return () => {
             tg.offEvent('mainButtonClicked', onSendData)
         }
-    }, [onSendData])
+    }, [onSendData, tg])
 
     const onAdd = (product) => {
         const alreadyAdded = addedItems.find(item => item.id === product.id);
