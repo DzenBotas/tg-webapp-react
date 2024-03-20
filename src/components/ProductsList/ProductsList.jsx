@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import './ProductList.css';
-import ProductItem from "../ProductItem/ProductItem";
+import './ProductsList.css';
+import Product from "../Product/Product";
 import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
 
@@ -21,7 +21,7 @@ const getTotalPrice = (items = []) => {
     }, 0)
 }
 
-const ProductList = () => {
+const ProductsList = () => {
     const [addedItems, setAddedItems] = useState([]);
     const {tg, queryId} = useTelegram();
 
@@ -72,7 +72,7 @@ const ProductList = () => {
     return (
         <div className={'list'}>
             {products.map(item => (
-                <ProductItem
+                <Product
                     product={item}
                     onAdd={onAdd}
                     className={'item'}
@@ -82,4 +82,4 @@ const ProductList = () => {
     );
 };
 
-export default ProductList;
+export default ProductsList;
