@@ -38,7 +38,7 @@ const ProductsList = () => {
             },
             body: JSON.stringify(data)
         })
-    }, [addedItems, tg, queryId])
+    }, [addedItems, queryId])
 
     useEffect(() => {
         tg.onEvent('mainButtonClicked', onSendData)
