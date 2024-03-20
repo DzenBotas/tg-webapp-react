@@ -15,20 +15,20 @@ const Form = () => {
             subject
         }
         tg.sendData(JSON.stringify(data));
-    }, [country, street, subject])
+    }, [country, street, subject, tg])
 
     useEffect(() => {
         tg.onEvent('mainButtonClicked', onSendData)
         return () => {
             tg.offEvent('mainButtonClicked', onSendData)
         }
-    }, [onSendData])
+    }, [onSendData, tg])
 
     useEffect(() => {
         tg.MainButton.setParams({
-            text: 'Отправить данные'
+            text: 'Send'
         })
-    }, [])
+    }, [tg.MainButton])
 
     useEffect(() => {
         if(!street || !country) {
@@ -36,7 +36,7 @@ const Form = () => {
         } else {
             tg.MainButton.show();
         }
-    }, [country, street])
+    }, [country, street, tg.MainButton])
 
     const onChangeCountry = (e) => {
         setCountry(e.target.value)
@@ -52,24 +52,24 @@ const Form = () => {
 
     return (
         <div className={"form"}>
-            <h3>Введите ваши данные</h3>
+            <h3>Your data</h3>
             <input
                 className={'input'}
                 type="text"
-                placeholder={'Страна'}
+                placeholder={'Country'}
                 value={country}
                 onChange={onChangeCountry}
             />
             <input
                 className={'input'}
                 type="text"
-                placeholder={'Улица'}
+                placeholder={'Street'}
                 value={street}
                 onChange={onChangeStreet}
             />
             <select value={subject} onChange={onChangeSubject} className={'select'}>
-                <option value={'physical'}>Физ. лицо</option>
-                <option value={'legal'}>Юр. лицо</option>
+                <option value={'physical'}>Physical</option>
+                <option value={'legal'}>Legal</option>
             </select>
         </div>
     );
