@@ -2,15 +2,22 @@ import React from 'react';
 import Button from "../Button/Button";
 import './Product.css';
 
+const titleToFilename = (title) => {
+    return title.replace(/ & /g, "_").replace(/ /g, "_").toLowerCase() + '.jpeg';
+}
+
 const Product = ({product, className, onAdd}) => {
 
     const onAddHandler = () => {
         onAdd(product);
     }
 
+    // Convert the product title to the corresponding image filename
+    const imageUrl = `http://54.37.137.0:3000/images/${titleToFilename(product.title)}`;
+
     return (
         <div className={'product ' + className}>
-            <div className={'img'}/>
+            <img className={'img'} src={imageUrl} alt={product.title}/>
             <div className={'title'}>{product.title}</div>
             <div className={'description'}>{product.description}</div>
             <div className={'price'}>
