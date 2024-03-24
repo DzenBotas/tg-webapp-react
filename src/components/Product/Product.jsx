@@ -13,7 +13,7 @@ const Product = ({product, className, onAdd}) => {
     }
 
     // Convert the product title to the corresponding image filename
-    const imageUrl = `https://five-squids-dig.loca.lt/images/${titleToFilename(product.title)}`;
+    const imageUrl = `https://54.37.137.0/images/${titleToFilename(product.title)}`;
 
     return (
         <div className={'product ' + className}>
