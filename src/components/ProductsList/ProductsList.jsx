@@ -5,12 +5,12 @@ import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
 
 const products = [
-    {id: '1', title: 'Europe', price: 'From 1,4$/Gb', description: 'Синего цвета, прямые'},
-    {id: '2', title: 'Africa', price: 12000, description: 'Зеленого цвета, теплая'},
-    {id: '3', title: 'Asia', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '4', title: 'North America', price: 122, description: 'Зеленого цвета, теплая'},
-    {id: '5', title: 'Latin America', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '6', title: 'Pacific', price: 600, description: 'Зеленого цвета, теплая'},
+    {id: '1', title: 'Europe', price: 'From 1,4$/Gb', description: 'Expanded coverage in 30+ European countries'},
+    {id: '2', title: 'Africa', price: 'From 8$/Gb', description: '25 networks - Orange, MTN and Airtel coverage in most places'},
+    {id: '3', title: 'Asia & Pacific', price: 'From 1.5$/Gb', description: 'Reliable, fast mobile data on 10+ networks'},
+    {id: '4', title: 'North America', price: 'From 5$/Gb', description: 'FIDO in Canada, AT&T and T-Mobile in the USA'},
+    {id: '5', title: 'Latin America', price: 'From 3$/Gb', description: '15+ networks - Movistar coverage in most countries'},
+    {id: '6', title: 'Global', price: 'From 10$/Gb', description: 'Expanded coverage on 200 networks'},
 ]
 
 const getTotalPrice = (items = []) => {
