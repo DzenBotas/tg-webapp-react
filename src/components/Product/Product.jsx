@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 import './Product.css';
 
 const titleToFilename = (title) => {
-    return title.replace(/ & /g, "_").replace(/ /g, "_").toLowerCase() + '.jpeg';
+    return encodeURIComponent(title.replace(/ & /g, "_").replace(/ /g, "_").toLowerCase()) + '.jpeg';
 }
 
 const Product = ({product, className, onAdd}) => {
