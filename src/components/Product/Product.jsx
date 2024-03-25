@@ -12,7 +12,6 @@ const Product = ({product, className, onAdd}) => {
         onAdd(product);
     }
 
-    // Convert the product title to the corresponding image filename
     const imageUrl = `https://54.37.137.0/images/${titleToFilename(product.title)}`;
 
     return (
