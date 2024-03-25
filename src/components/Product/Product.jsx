@@ -20,7 +20,7 @@ const Product = ({product, className, onAdd}) => {
             <div className={'title'}><strong>{product.title}</strong></div>
             <div className={'description'}>{product.description}</div>
             <div className={'price'}>
-                <span>Price: <b>{product.price}</b></span>
+                <span><b>{product.price}</b></span>
             </div>
             <Button className={'add-btn'} onClick={onAddHandler}>
                 Add to Cart
