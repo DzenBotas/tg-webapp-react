@@ -12,7 +12,7 @@ const Product = ({product, className, onAdd}) => {
         onAdd(product);
     }
 
-    const imageUrl = `https://54.37.137.0/images/${titleToFilename(product.title)}`;
+    const imageUrl = `https://vps-ed04f1ea.vps.ovh.net/images/${titleToFilename(product.title)}`;
 
     return (
         <div className={'product ' + className}>
