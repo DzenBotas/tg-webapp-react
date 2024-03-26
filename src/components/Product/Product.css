@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     border: 1px solid var(--tg-theme-button-color);
-    
+    padding: 15px;
     /* width: 170px; */
 }
+
 
 .img {
     width: 100%;
@@ -17,9 +18,9 @@
 
 .description {
     font-size: 0.8em;
-    padding: 15px;
 }
 
-.add-btn {
-    width: 100%;
+.title {
+    font-size: 1.2em;
+    margin: 10px 0;
 }
