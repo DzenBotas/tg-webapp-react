@@ -7,4 +7,8 @@
 .item {
     margin-right: 10px;
     margin-bottom: 10px;
+        /* styles for screens 600px wide or less */
+    @media (max-width: 600px) {
+            width: 100%;
+        }
 }
