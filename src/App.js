@@ -7,10 +7,12 @@ import ProductList from './components/ProductsList/ProductsList';
 
 function App() {
   const { tg } = useTelegram();
+  const { onExpand } = useTelegram();
 
     useEffect(() => {
       tg.ready();
-  }, [tg])
+      onExpand();
+  }, [tg, onExpand])
 
     return (
       <div className="App">
