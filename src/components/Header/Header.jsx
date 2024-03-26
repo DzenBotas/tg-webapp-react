@@ -13,7 +13,7 @@ const Header = () => {
             {/* <Button onClick={onClose}>Close</Button> */}
             {/* <Button onClick={onExpand}>Expand</Button> */}
             {/* <span className={'username'}>{user?.username}</span> */}
-            <h1>eSIM Store</h1>
+            <h2>Travel Light, Connect Instantly</h2>
         </div>
     );
 };
