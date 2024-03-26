@@ -1,16 +1,16 @@
 import React from 'react';
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 import './Product.css';
 
 const titleToFilename = (title) => {
     return encodeURIComponent(title.replace(/ & /g, "_").replace(/ /g, "_").toLowerCase()) + '.jpeg';
 }
 
-const Product = ({product, className, onAdd}) => {
+const Product = ({product, className }) => {
 
-    const onAddHandler = () => {
-        onAdd(product);
-    }
+    // const onAddHandler = () => {
+    //     onAdd(product);
+    // }
 
     const imageUrl = `https://vps-ed04f1ea.vps.ovh.net/images/${titleToFilename(product.title)}`;
 
@@ -22,9 +22,9 @@ const Product = ({product, className, onAdd}) => {
             <div className={'price'}>
                 <span><b>{product.price}</b></span>
             </div>
-            <Button className={'add-btn'} onClick={onAddHandler}>
+            {/* <Button className={'add-btn'} onClick={onAddHandler}>
                 Add to Cart
-            </Button>
+            </Button> */}
         </div>
     );
 };
