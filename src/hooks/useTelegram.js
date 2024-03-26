@@ -13,10 +13,15 @@ export function useTelegram() {
         }
     }
 
+    const onExpand = () => {
+        tg.expand()
+    }
+
     return {
         onClose,
         onToggleButton,
         tg,
+        onExpand,
         user: tg.initDataUnsafe?.user,
         queryId: tg.initDataUnsafe?.query_id,
     }
