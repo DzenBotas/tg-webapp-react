@@ -26,3 +26,8 @@
     margin: 10px 0;
     color: var(--tg-theme-text-color)
 }
+
+.info-links {
+    display: flex;
+    justify-content: space-between;
+  }

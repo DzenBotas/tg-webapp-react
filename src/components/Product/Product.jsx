@@ -18,6 +18,10 @@ const Product = ({product, className }) => {
             <div className={'price'}>
                 <span><b>{product.price}</b></span>
             </div>
+            <div className="info-links">
+                <a href="/devices">Supported devices</a>
+                <a href="#">See details</a>
+            </div>
         </div>
     );
 };
