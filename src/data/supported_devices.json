@@ -1,0 +1,315 @@
+{	
+    "data": [
+		{
+			"type": "Tablets & laptops",
+			"brands": [
+				{
+					"title": "ASUS",
+					"models": [
+						"ASUS Mini Transformer T103HAF",
+						"ASUS NovaGo TP370QL",
+						"ASUS VivoBook Flip 14 TP401NA"
+					],
+					"exceptions": [
+						"PC with Windows 10 version earlier than 1703 and not LTE-disabled"
+					]
+				},
+				{
+					"title": "Acer",
+					"models": [
+						"Acer Spin 7",
+						"Acer Swift 3",
+						"Acer Swift 7",
+						"Acer Travelmate P2",
+						"Acer TravelMate Spin P4",
+						"Acer TravelMate P6"
+					],
+					"exceptions": [
+						"PC with Windows 10 version earlier than 1703 and not LTE-disabled"
+					]
+				},
+				{
+					"title": "Apple",
+					"models": [
+						"iPad Pro 12.9 (3rd Gen or later)",
+						"iPad Air (3rd Gen or later)",
+						"iPad (7th Gen or later)",
+						"iPad mini (5th Gen or later)",
+						"iPad Pro 11 (1st Gen or later)"
+					],
+					"exceptions": [
+						"PC with Windows 10 version earlier than 1703 and not LTE-disabled"
+					]
+				},
+				{
+					"title": "Dell",
+					"models": [
+						"Dell Latitude 9420",
+						"Dell Latitude 7410",
+						"Dell Latitude 9510",
+						"Dell Latitude 5410",
+						"Dell Latitude 5411",
+						"Dell Latitude 7310",
+						"Dell Latitude 9410",
+						"Dell Latitude 7210 2-in-1",
+						"Dell Latitude 5511"
+					],
+					"exceptions": [
+						"PC with Windows 10 version earlier than 1703 and not LTE-disabled"
+					]
+				},
+				{
+					"title": "HP",
+					"models": [
+						"HP Spectre Folio 13",
+						"HP Spectre x360",
+						"HP Zbook G5",
+						"HP Zbook G4",
+						"HP Zbook Studio G5",
+						"HP mt32 Mobile Thin Client",
+						"HP mt45 Mobile Thin Client",
+						"HP mt46 Mobile Thin Client",
+						"HP Probook G4",
+						"HP Probook G3",
+						"HP Elitebook G4",
+						"HP EliteBook 840 Aero G8",
+						"HP Elitebook x360 G6",
+						"HP Elitebook x360 G5",
+						"HP Elitebook x360 G3",
+						"HP Elitebook x360 G2",
+						"HP Elitebook G5",
+						"HP Envy x2",
+						"HP Probook G5",
+						"HP Elite Folio 13 – 5G",
+						"HP Elite Dragonfly 2",
+						"HP Elite x2 1013 G3",
+						"HP Elite x2 1012 G2"
+					],
+					"exceptions": [
+						"PC with Windows 10 version earlier than 1703 and not LTE-disabled"
+					]
+				},
+				{
+					"title": "Huawei",
+					"models": [
+						"Huawei dtab Compact d-02K"
+					],
+					"exceptions": [
+						"PC with Windows 10 version earlier than 1703 and not LTE-disabled"
+					]
+				},
+				{
+					"title": "Lenovo",
+					"models": [
+						"Lenovo Flex 5G",
+						"ThinkPad X1 Titanium Yoga 2 in 1",
+						"ThinkPad X1 Carbon Gen 9",
+						"ThinkPad X1 Fold",
+						"ThinkPad X12 Detachable",
+						"ThinkPad X1 Nano",
+						"Lenovo X1 Fold",
+						"Lenovo Yoga C630",
+						"Lenovo Miix 630",
+						"Lenovo Yoga 520",
+						"Lenovo Yoga 720 convertible laptops"
+					],
+					"exceptions": [
+						"PC with Windows 10 version earlier than 1703 and not LTE-disabled"
+					]
+				},
+				{
+					"title": "Microsoft",
+					"models": [
+						"Surface Pro 5 LTE Advanced",
+						"Surface Pro X",
+						"Surface Pro LTE",
+						"New Surface Pro 7+",
+						"Surface Go 2"
+					],
+					"exceptions": [
+						"PC with Windows 10 version earlier than 1703 and not LTE-disabled"
+					]
+				},
+				{
+					"title": "Samsung",
+					"models": [
+						"Samsung Galaxy Book 2"
+					],
+					"exceptions": [
+						"PC with Windows 10 version earlier than 1703 and not LTE-disabled"
+					]
+				}
+			]
+		},
+		{
+			"type": "Smartphones",
+			"brands": [
+				{
+					"title": "Apple",
+					"models": [
+						"iPhone 15\/ 15 Plus\/ 15 Pro\/ 15 Pro Max",
+						"iPhone 14\/ 14 Plus\/ 14 Pro\/ 14 Pro Max",
+						"iPhone 13\/ 13 mini\/ 13 Pro\/ 13 Pro Max",
+						"iPhone 12\/ 12 mini\/ 12 Pro\/ 12 Pro Max",
+						"iPhone SE 2020\/ SE 2022",
+						"iPhone 11\/ 11 Pro\/ 11 Pro Max",
+						"iPhone XR\/ XS\/ XS Max"
+					],
+					"exceptions": [
+						"iPhone devices (except for iPhone 13 mini, iPhone 12 mini, iPhone SE 2020, and iPhone XS) from China, Hong Kong and Macao."
+					]
+				},
+				{
+					"title": "Google",
+					"models": [
+						"Google Pixel 4\/ 4 XL\/ 4a\/ 4a XL\/ 4a 5G",
+						"Google Pixel 7\/ 7a\/ Pro",
+						"Google Pixel 6\/ 6a\/ 6 Pro",
+						"Google Pixel 8\/ 8 Pro",
+						"Google Pixel Fold",
+						"Google Pixel 5\/ 5a 5G"
+					],
+					"exceptions": []
+				},
+				{
+					"title": "Hammer",
+					"models": [
+						"Hammer Explorer Pro",
+						"Hammer Blade 5G",
+						"Hammer Blade 3"
+					],
+					"exceptions": []
+				},
+				{
+					"title": "Huawei",
+					"models": [
+						"Huawei P40",
+						"Huawei Mate 40 Pro",
+						"Huawei Mate 40",
+						"Huawei P40 4G",
+						"Huawei P40 Pro"
+					],
+					"exceptions": [
+						"Huawei P40 Pro+"
+					]
+				},
+				{
+					"title": "Motorola",
+					"models": [
+						"Motorola Razr 40 Ultra",
+						"Motorola Edge 40 Pro",
+						"Motorola Razr 40",
+						"Motorola RAZR 5G",
+						"Motorola RAZR 2019",
+						"Motorola Edge Plus 2023",
+						"Motorola Edge 40 Neo",
+						"Motorola Edge 40"
+					],
+					"exceptions": []
+				},
+				{
+					"title": "OPPO",
+					"models": [
+						"Oppo Reno5 A",
+						"Oppo Find X5",
+						"Oppo Find X5 Pro",
+						"Oppo Reno6 Pro 5G",
+						"Oppo Find X3",
+						"Oppo Find X3 Pro"
+					],
+					"exceptions": [
+						"Oppo Find X5 Lite",
+						"for Oppo Reno6 Pro 5G eSIM technology is not available in some regions. Please contact Oppo Support Team for more information"
+					]
+				},
+				{
+					"title": "Rakuten",
+					"models": [
+						"Rakuten Big-S",
+						"Rakuten Big",
+						"Rakuten Mini",
+						"Rakuten Hand 5G",
+						"Rakuten Hand"
+					],
+					"exceptions": []
+				},
+				{
+					"title": "Samsung",
+					"models": [
+						"Samsung Galaxy Z Fold4",
+						"Samsung Galaxy Z Flip 4",
+						"Samsung  Galaxy A54",
+						"Samsung  Galaxy Note20 5G",
+						"Samsung Galaxy Note20 Ultra 5G",
+						"Samsung Galaxy Z Flip\/ Flip 5G",
+						"Samsung Galaxy Z Fold3 5G",
+						"Samsung Galaxy Z Flip3 5G",
+						"Samsung Galaxy Z Flip 5",
+						"Samsung Galaxy Fold",
+						"Samsung Galaxy Z Fold2 5G",
+						"Samsung Galaxy S24\/ S24+\/ S24 Ultra",
+						"Samsung Galaxy S23+\/ S23 Ultra",
+						"Samsung Galaxy S23\/ S23 FE",
+						"Samsung Galaxy S22\/ S22+\/ S22 Ultra 5G",
+						"Samsung Galaxy S21+\/ S21 Ultra 5G",
+						"Samsung Galaxy S21 5G\/ S21 FE",
+						"Samsung Galaxy S20\/ S20+\/ S20 Ultra 5G",
+						"Samsung Galaxy Z Fold5"
+					],
+					"exceptions": [
+						"Samsung Galaxy A54 for Asia market are not eSIM compatible",
+						"Samsung S20\/S21 and Galaxy Z Flip 5G from the USA are not eSIM compatible. (Samsung S21 series devices (not FE models) from the USA may have eSIM capability as long as the One UI 4 update is installed)",
+						"Samsung S20 FE Series are not eSIM capable",
+						"Samsung Note 20 Ultra and Samsung Galaxy Z Fold 2 from the USA and Hong Kong",
+						"Samsung Galaxy S20 Hybrid Dual SIM — Samsung produces both eSIM and no eSIM versions",
+						"Samsung Galaxy S22 Ultra from Hong Kong"
+					]
+				},
+				{
+					"title": "Sony",
+					"models": [
+						"Sony Xperia 1 IV",
+						"Sony Xperia 10 III Lite",
+						"Sony Xperia 10 IV",
+						"Sony Xperia 5 IV"
+					],
+					"exceptions": []
+				},
+				{
+					"title": "Other",
+					"models": [
+						"Fairphone 5",
+						"Fairphone 4",
+						"Nuu Mobile X5",
+						"Vivo V29 Lite 5G ",
+						"Xiaomi 13 Lite\/ 13T\/ 13T Pro",
+						"Xiaomi 14\/ 14 Pro",
+						"Sharp Aquos Wish",
+						"Sharp Aquos Sense6s",
+						"Nokia G60",
+						"Nokia X30",
+						"Nokia XR21",
+						"TCL 40 XL",
+						"Vivo X90 Pro",
+						"Oukitel WP30 Pro",
+						"Oneplus Open",
+						"Oneplus 11 5G",
+						"Oneplus 12",
+						"Microsoft Surface Duo 2",
+						"Microsoft Surface Duo",
+						"Honor Magic5 Pro",
+						"Honor Magic 4 Pro",
+						"Honor 90 (dual SIM)",
+						"Gemini PDA",
+						"Xiaomi 12T Pro"
+					],
+					"exceptions": [
+						"Xiaomi 12T Pro\/ 13T\/ 13T Pro\/ 14\/ 14 Pro — eSIM availability may vary depending on country\/region and carrier (https:\/\/www.mi.com\/global\/support\/esim). For more details, please contact carrier for more information",
+						"Honor Magic 4 Pro, Honor Magic4 Ultimate, Honor Magic 5 Pro, Honor 90 — Only dual SIM model supports eSIM. SIM Card 2 can be set up as eSIM or Nano card. eSIM requires a wireless service plan and allows you to activate a mobile network plan without the use of a Nano SIM. eSIM availability may vary depending on country and carrier",
+						"only Europe version of Vivo X90 Pro and Vivo V29 Lite 5G support eSIMs"
+					]
+				}
+			]
+		}
+	]
+}
