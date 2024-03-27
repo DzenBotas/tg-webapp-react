@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import './App.css';
 import { useTelegram } from './hooks/useTelegram';
-import Header from "./components/Header/Header";
+// import Header from "./components/Header/Header";
 import { Route, Routes } from 'react-router-dom';
 import ProductList from './components/ProductsList/ProductsList';
 import Devices from './components/Devices/Devices'; // adjust the path as needed
@@ -18,7 +18,7 @@ function App() {
 
     return (
       <div className="App">
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route index element={< ProductList />} />
           <Route path="/devices" element={<Devices />} />
