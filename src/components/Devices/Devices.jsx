@@ -8,8 +8,7 @@ function Devices() {
 
     useEffect(() => {
         setData(devicesData.data);
-            console.log(devicesData.data.map(deviceType => deviceType.type));
-    }, [data]);
+    }, []);
 
     return (
         <div>
