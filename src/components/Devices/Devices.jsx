@@ -49,7 +49,7 @@ function Devices() {
                                         <li key={modelIndex}>{model}</li>
                                     ))}
                                 </ul>
-                                <div className={'exceptions'}><span>Exceptions:</span> {brand.exceptions}</div>
+                                <div className={'exceptions'}>{brand.exceptions && brand.exceptions.length > 0 &&                          <span>Exceptions:</span>} {brand.exceptions}</div>
                             </div>
                         ))}
                     </div>
