@@ -31,4 +31,9 @@
     display: flex;
     justify-content: space-between;
   }
+
+a {
+    color: var(--tg-theme-link-color);
+    text-decoration: none;
+}
   
