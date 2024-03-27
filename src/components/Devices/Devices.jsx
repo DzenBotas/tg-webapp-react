@@ -4,21 +4,22 @@ import './Devices.css';
 
 function Devices() {
     const [data, setData] = useState([]);
-    const [activeTab, setActiveTab] = useState('smartphones'); // Add this line
+    const [activeTab, setActiveTab] = useState('Smartphones'); // Add this line
 
     useEffect(() => {
         setData(devicesData.data);
-    }, []);
+            console.log(devicesData.data.map(deviceType => deviceType.type));
+    }, [data]);
 
     return (
         <div>
             <ul className="tabs">
-                <li className={activeTab === 'smartphones' ? 'active' : ''} onClick={() => setActiveTab('smartphones')}>Smartphones</li>
-                <li className={activeTab === 'tablets-laptops' ? 'active' : ''} onClick={() => setActiveTab('tablets-laptops')}>Tablets & Laptops</li>
+                <li className={activeTab === 'Smartphones' ? 'active' : ''} onClick={() => setActiveTab('Smartphones')}>Smartphones</li>
+                <li className={activeTab === 'Tablets & laptops' ? 'active' : ''} onClick={() => setActiveTab('Tablets & laptops')}>Tablets & Laptops</li>
             </ul>
 
-            {activeTab === 'smartphones' && 
-                data.filter(deviceType => deviceType.type === 'smartphones').map((deviceType, index) => (
+            {activeTab === 'Smartphones' && 
+                data.filter(deviceType => deviceType.type === 'Smartphones').map((deviceType, index) => (
                     <div key={index}>
                         <h2 className={'type'}>{deviceType.type}</h2>
                         {deviceType.brands.map((brand, brandIndex) => (
@@ -36,8 +37,8 @@ function Devices() {
                 ))
             }
 
-            {activeTab === 'tablets-laptops' && 
-                data.filter(deviceType => deviceType.type === 'tablets-laptops').map((deviceType, index) => (
+            {activeTab === 'Tablets & laptops' && 
+                data.filter(deviceType => deviceType.type === 'Tablets & laptops').map((deviceType, index) => (
                     <div key={index}>
                         <h2 className={'type'}>{deviceType.type}</h2>
                         {deviceType.brands.map((brand, brandIndex) => (
