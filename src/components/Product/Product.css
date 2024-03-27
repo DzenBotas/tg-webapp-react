@@ -3,7 +3,7 @@
     flex-direction: column;
     border: 1px solid var(--tg-theme-button-color);
     padding: 15px;
-    /* width: 170px; */
+    background-color: var(--tg-theme-bg-color);
 }
 
 
@@ -18,9 +18,11 @@
 
 .description {
     font-size: 0.8em;
+    color: var(--tg-theme-hint-color);
 }
 
 .title {
     font-size: 1.2em;
     margin: 10px 0;
+    color: var(--tg-theme-text-color)
 }

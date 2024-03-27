@@ -8,10 +8,6 @@ const titleToFilename = (title) => {
 
 const Product = ({product, className }) => {
 
-    // const onAddHandler = () => {
-    //     onAdd(product);
-    // }
-
     const imageUrl = `https://vps-ed04f1ea.vps.ovh.net/images/${titleToFilename(product.title)}`;
 
     return (
@@ -22,9 +18,6 @@ const Product = ({product, className }) => {
             <div className={'price'}>
                 <span><b>{product.price}</b></span>
             </div>
-            {/* <Button className={'add-btn'} onClick={onAddHandler}>
-                Add to Cart
-            </Button> */}
         </div>
     );
 };
