@@ -14,7 +14,7 @@ const BackButton = () => {
     
     return (
         <div className={'header'}>
-            <Button onClick={onBack}>Back</Button>
+            <Button BackButton={onBack}>Back</Button>
             {/* <Button onClick={onExpand}>Expand</Button> */}
             {/* <span className={'username'}>{user?.username}</span> */}
             <h3>Travel Bundles</h3>
