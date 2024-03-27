@@ -13,7 +13,7 @@ const BackButton = () => {
     };
 
     const onBack = () => {
-        tg.onEvent('backButtonClicked', callback);
+        tg.BackButton.onClick(callback);
     }
 
     return (
