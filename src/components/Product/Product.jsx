@@ -20,7 +20,7 @@ const Product = ({product, className }) => {
             </div>
             <div className="info-links">
                 <a href="/devices">Supported devices</a>
-                <a href="#">See details</a>
+                <a href="/product_details">See details</a>
             </div>
         </div>
     );
