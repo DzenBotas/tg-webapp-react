@@ -13,7 +13,7 @@ const Header = () => {
             {/* <Button onClick={onClose}>Close</Button> */}
             {/* <Button onClick={onExpand}>Expand</Button> */}
             {/* <span className={'username'}>{user?.username}</span> */}
-            <h2>Travel Light, Connect Instantly</h2>
+            <h3>Travel Bundles</h3>
         </div>
     );
 };
