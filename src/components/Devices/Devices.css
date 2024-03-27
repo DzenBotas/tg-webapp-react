@@ -1,0 +1,18 @@
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    background-color: white;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.tabs li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tabs li.active {
+    border-bottom: 2px solid #000;
+}

@@ -11,6 +11,14 @@ function Devices() {
 
     return (
         <div>
+            <ul className="tabs">
+                <li className={activeTab === 'smartphones' ? 'active' : ''} onClick={() => setActiveTab('smartphones')}>Smartphones</li>
+                <li className={activeTab === 'tablets-laptops' ? 'active' : ''} onClick={() => setActiveTab('tablets-laptops')}>Tablets & Laptops</li>
+            </ul>
+
+            {activeTab === 'smartphones' && <div>{/* Display smartphones data here */}</div>}
+            {activeTab === 'tablets-laptops' && <div>{/* Display tablets & laptops data here */}</div>}
+            
             {data.map((deviceType, index) => (
                 <div key={index}>
                     <h2 className={'type'}>{deviceType.type}</h2>
