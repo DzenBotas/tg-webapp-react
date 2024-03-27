@@ -11,7 +11,7 @@ function Devices() {
     }, []);
 
     return (
-        <div>
+        <div className="container">
             <ul className="tabs">
                 <li className={activeTab === 'Smartphones' ? 'active' : ''} onClick={() => setActiveTab('Smartphones')}>Smartphones</li>
                 <li className={activeTab === 'Tablets & laptops' ? 'active' : ''} onClick={() => setActiveTab('Tablets & laptops')}>Tablets & Laptops</li>

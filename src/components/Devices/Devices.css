@@ -52,6 +52,10 @@
     color: #888;
 }
 
+.exceptions span {
+    font-weight: bold;
+}
+
 /* Responsive styles */
 @media only screen and (min-width: 768px) {
     .tabs li {
@@ -75,6 +79,8 @@
 /* General layout */
 .container {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 5px auto;
     padding: 20px;
 }
+
+
