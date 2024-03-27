@@ -4,6 +4,7 @@ import './Devices.css';
 
 function Devices() {
     const [data, setData] = useState([]);
+    const [activeTab, setActiveTab] = useState('smartphones'); // Add this line
 
     useEffect(() => {
         setData(devicesData.data);
