@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import devicesData from '../../data/supported_devices.json';
 import './Devices.css';
-import BackButton from "../Button/BackButton";
 
 function Devices() {
     const [data, setData] = useState([]);
@@ -13,7 +12,6 @@ function Devices() {
 
     return (
         <div className="container">
-            <BackButton>Back</BackButton>
             <ul className="tabs">
                 <li className={activeTab === 'Smartphones' ? 'active' : ''} onClick={() => setActiveTab('Smartphones')}>Smartphones</li>
                 <li className={activeTab === 'Tablets & laptops' ? 'active' : ''} onClick={() => setActiveTab('Tablets & laptops')}>Tablets & Laptops</li>
