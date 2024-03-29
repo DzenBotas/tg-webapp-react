@@ -17,6 +17,7 @@ const BundleDetails = () => {
 
             if (response.ok) {
                 const jsonData = await response.json();
+                console.log(jsonData)
                 setData(jsonData);
             } else {
                 console.error('Error:', response.status, response.statusText);
@@ -26,51 +27,53 @@ const BundleDetails = () => {
         fetchData();
     }, []);
 
-    return (
-        <div>
-            {data && (
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Description</th>
-                            <th>Coverage</th>
-                            <th>IP Location</th>
-                            <th>Image</th>
-                            <th>Coverage List</th>
-                            <th>Refills Title</th>
-                            <th>Refills Amount (MB)</th>
-                            <th>Refills Days</th>
-                            <th>Refills Price (USD)</th>
-                            <th>Refills Price (EUR)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {data.bundles.map((bundle, index) => (
-                            <tr key={index}>
-                                <td>{bundle.title}</td>
-                                <td>{bundle.description}</td>
-                                <td>{bundle.coverage}</td>
-                                <td>{bundle.ip_location}</td>
-                                <td><img src={bundle.img} alt={bundle.title} /></td>
-                                <td>{bundle.coverage_list.join(', ')}</td>
-                                {bundle.refills.map((refill, index) => (
-                                    <React.Fragment key={index}>
-                                        <td>{refill.title}</td>
-                                        <td>{refill.amount_mb}</td>
-                                        <td>{refill.days}</td>
-                                        <td>{refill.price_usd}</td>
-                                        <td>{refill.price_eur}</td>
-                                    </React.Fragment>
-                                ))}
+        return (
+            <div>
+                {data && (
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Coverage</th>
+                                <th>IP Location</th>
+                                <th>Image</th>
+                                <th>Coverage List</th>
+                                <th>Refills Title</th>
+                                <th>Refills Amount (MB)</th>
+                                <th>Refills Days</th>
+                                <th>Refills Price (USD)</th>
+                                <th>Refills Price (EUR)</th>
                             </tr>
-                        ))}
-                    </tbody>
-                </table>
-            )}
-        </div>
-    );
-};
+                        </thead>
+                        <tbody>
+                            {data.bundles.map((bundle, index) => (
+                                <React.Fragment key={index}>
+                                    <tr>
+                                        <td>{bundle.title}</td>
+                                        <td>{bundle.description}</td>
+                                        <td>{bundle.coverage}</td>
+                                        <td>{bundle.ip_location}</td>
+                                        <td><img src={bundle.img} alt={bundle.title} /></td>
+                                        <td>{bundle.coverage_list.join(', ')}</td>
+                                    </tr>
+                                    {bundle.refills && Object.values(bundle.refills).map((refill, index) => (
+                                        <tr key={index}>
+                                            <td>{refill.title}</td>
+                                            <td>{refill.amount_mb}</td>
+                                            <td>{refill.days}</td>
+                                            <td>{refill.price_usd}</td>
+                                            <td>{refill.price_eur}</td>
+                                        </tr>
+                                    ))}
+                                </React.Fragment>
+                            ))}
+                        </tbody>
+                    </table>
+                )}
+            </div>
+        );
+    };
 
 export default BundleDetails;
 
