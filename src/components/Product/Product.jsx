@@ -26,10 +26,6 @@ const handleOnClick = (event) => {
             </div>
             <div className="info-links">
                 <Link to="/devices">Supported devices</Link>
-                {/* <Link to={{
-                    pathname: "/bundle_details",
-                    state: { title: product.title }
-                }}>See details</Link> */}
                 <a href="/bundle_details" onClick={handleOnClick}>See details</a>
             </div>
         </div>
