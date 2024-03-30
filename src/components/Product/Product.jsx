@@ -11,7 +11,8 @@ const Product = ({product, className }) => {
     const imageUrl = `https://vps-ed04f1ea.vps.ovh.net/images/${titleToFilename(product.title)}`;
 
 const navigate = useNavigate();
-const handleOnClick = () => {
+const handleOnClick = (event) => {
+    event.preventDefault();
     navigate("/bundle_details", { state: { title: product.title }});
     }
 
@@ -29,7 +30,7 @@ const handleOnClick = () => {
                     pathname: "/bundle_details",
                     state: { title: product.title }
                 }}>See details</Link> */}
-                <a onClick={handleOnClick}>See details</a>
+                <a href="/bundle_details" onClick={handleOnClick}>See details</a>
             </div>
         </div>
     );
