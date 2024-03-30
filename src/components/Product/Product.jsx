@@ -1,5 +1,5 @@
 import React from 'react';
-// import Button from "../Button/Button";
+import { Link, useNavigate } from 'react-router-dom';
 import './Product.css';
 
 const titleToFilename = (title) => {
@@ -10,6 +10,11 @@ const Product = ({product, className }) => {
 
     const imageUrl = `https://vps-ed04f1ea.vps.ovh.net/images/${titleToFilename(product.title)}`;
 
+const navigate = useNavigate();
+const handleOnClick = () => {
+    navigate("/bundle_details", { state: { title: product.title }});
+    }
+
     return (
         <div className={'product ' + className}>
             <img className={'img'} src={imageUrl} alt={product.title}/>
@@ -19,8 +24,12 @@ const Product = ({product, className }) => {
                 <span><b>{product.price}</b></span>
             </div>
             <div className="info-links">
-                <a href="/devices">Supported devices</a>
-                <a href="/bundle_details">See details</a>
+                <Link to="/devices">Supported devices</Link>
+                {/* <Link to={{
+                    pathname: "/bundle_details",
+                    state: { title: product.title }
+                }}>See details</Link> */}
+                <button onClick={handleOnClick}>See details</button>
             </div>
         </div>
     );

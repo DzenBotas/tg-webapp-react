@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+
 
 const BundleDetails = () => {
     const [data, setData] = useState(null);
+    const location = useLocation();
+    const title = location.state ? location.state.title : 'Default Title';
 
     useEffect(() => {
         const fetchData = async () => {
@@ -31,6 +35,7 @@ const BundleDetails = () => {
             <div>
                 {data && data.bundles.map((bundle, index) => (
                     <React.Fragment key={index}>
+                        <h1>{title}</h1>
                         <div>{bundle.title}</div>
                         <div><img src={bundle.img} alt={bundle.title} /></div>
                         <div>{bundle.description}</div>
