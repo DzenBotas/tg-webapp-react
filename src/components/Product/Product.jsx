@@ -29,7 +29,7 @@ const handleOnClick = () => {
                     pathname: "/bundle_details",
                     state: { title: product.title }
                 }}>See details</Link> */}
-                <button onClick={handleOnClick}>See details</button>
+                <a onClick={handleOnClick}>See details</a>
             </div>
         </div>
     );
