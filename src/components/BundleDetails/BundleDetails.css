@@ -1,4 +1,45 @@
-.gb-price {
+.bundle {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    margin: 16px;
+    background: white;
+}
+
+.bundle-header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.bundle-title {
+    flex-grow: 1;
+    margin-left: 16px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bundle-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.bundle-description {
+    padding: 0 16px;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.5;
+}
+
+.bundle-plans {
+    padding: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bundle-price {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 8px;
 }
