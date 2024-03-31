@@ -46,7 +46,7 @@ const BundleDetails = () => {
                             </div>
                             <div className='bundle-description'>{bundle.description}</div>
                             {/* <div>{bundle.coverage}</div> */}
-                            <div>Private IP: {bundle.ip_location}</div>
+                            <div className='bundle-ip'>Private IP: {bundle.ip_location}</div>
                             {/* <div>
                                     {bundle.networks && bundle.networks.map((network, index) => (
                                         <div key={index}>{network.title}</div>

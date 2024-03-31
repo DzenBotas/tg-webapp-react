@@ -22,14 +22,20 @@
 }
 
 .bundle-image img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 100px;
+    height: auto;
+    border-radius: 5%;
+    object-fit: cover;
 }
 
 .bundle-description {
     padding: 0 16px;
     color: rgba(0, 0, 0, 0.6);
+    line-height: 1.5;
+}
+
+.bundle-ip {
+    padding: 0 16px;
     line-height: 1.5;
 }
 
