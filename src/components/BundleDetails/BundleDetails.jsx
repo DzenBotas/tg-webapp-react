@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-
+import "./BundleDetails.css"
 
 const BundleDetails = () => {
     const [data, setData] = useState(null);
@@ -34,7 +34,7 @@ const BundleDetails = () => {
         return (
             <div>
                 {data && data.bundles.map((bundle, index) => {
-                    console.log(bundle.networks); // Log bundle.networks for each bundle
+                    // console.log(bundle.networks); // Log bundle.networks for each bundle
 
                     return (
                         <React.Fragment key={index}>
@@ -42,21 +42,23 @@ const BundleDetails = () => {
                             <div>{bundle.title}</div>
                             <div><img src={bundle.img} alt={bundle.title} /></div>
                             <div>{bundle.description}</div>
-                            <div>{bundle.coverage}</div>
+                            {/* <div>{bundle.coverage}</div> */}
                             <div>{bundle.ip_location}</div>
-                            <div>
+                            {/* <div>
                                 {bundle.networks && bundle.networks.map((network, index) => (
                                     <div key={index}>{network.title}</div>
                                 ))}
-                            </div>                            
+                            </div>                             */}
                             {bundle.refills && Object.values(bundle.refills).map((refill, index) => (
-                                <React.Fragment key={index}>
-                                    <div>{refill.title}</div>
-                                    <div>{refill.amount_mb}</div>
-                                    <div>{refill.days}</div>
-                                    <div>{refill.price_usd}</div>
-                                    <div>{refill.price_eur}</div>
-                                </React.Fragment>
+                                <div className="gb-price">
+                                    <React.Fragment key={index}>
+                                        <div>{refill.title}</div>
+                                        <div>{refill.price_eur}</div>
+                                        {/* <div>{refill.amount_mb}</div>
+                                        <div>{refill.days}</div>
+                                        <div>{refill.price_usd}</div> */}
+                                    </React.Fragment>
+                            </div>
                             ))}
                         </React.Fragment>
                     );
