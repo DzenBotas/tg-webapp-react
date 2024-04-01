@@ -33,7 +33,7 @@
   }
 
 a {
-    color: var(--tg-theme-link-color);
+    color: var(--tg-theme-accent-text-color);
     text-decoration: none;
 }
   
