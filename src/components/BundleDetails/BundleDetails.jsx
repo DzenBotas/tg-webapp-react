@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // import { useLocation } from 'react-router-dom';
 import "./BundleDetails.css"
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 
 const BundleDetails = () => {
     const [data, setData] = useState(null);
