@@ -67,8 +67,8 @@ const BundleDetails = () => {
                                 ))
                                 }
                             </ul>
-                            <Button><strong>Buy eSIM</strong></Button>
                         </div>
+                            <div className=""><Button><strong>Buy eSIM</strong></Button></div>
                     </React.Fragment>
                 );
             })}
