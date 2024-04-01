@@ -33,7 +33,7 @@ const BundleDetails = () => {
     }, []);
 
     return (
-        <div>
+        <div className='container'>
             {data && data.bundles.map((bundle, index) => {
                 // console.log(bundle.networks); // Log bundle.networks for each bundle
 
@@ -67,8 +67,8 @@ const BundleDetails = () => {
                                 ))
                                 }
                             </ul>
-                            <Button><strong>Buy eSIM</strong></Button>
                         </div>
+                            <Button><strong>Buy eSIM</strong></Button>
                     </React.Fragment>
                 );
             })}
