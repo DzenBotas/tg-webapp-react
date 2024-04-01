@@ -18,7 +18,7 @@
 
 .description {
     font-size: 0.8em;
-    color: var(--tg-theme-hint-color);
+    color: var(--tg-theme-subtitle-text-color);
 }
 
 .title {
