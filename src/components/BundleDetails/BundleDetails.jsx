@@ -70,7 +70,7 @@ const BundleDetails = () => {
                             </ul>
                         </div>
                         <Button fullWidth variant="filled">
-                            Buy Now
+                            Buy
                         </Button>
                     </React.Fragment>
                 );
