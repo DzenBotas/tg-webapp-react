@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 // import { useLocation } from 'react-router-dom';
 import "./BundleDetails.css"
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
+import { Button } from '@mantine/core';
 
 const BundleDetails = () => {
     const [data, setData] = useState(null);
@@ -68,7 +69,9 @@ const BundleDetails = () => {
                                 }
                             </ul>
                         </div>
-                            <Button><strong>Buy eSIM</strong></Button>
+                        <Button fullWidth variant="filled">
+                            Buy Now
+                        </Button>
                     </React.Fragment>
                 );
             })}
