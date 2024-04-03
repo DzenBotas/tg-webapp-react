@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import "./BundleDetails.css"
 // import Button from "../Button/Button";
-import { Button, Table, Accordion } from '@mantine/core';
+import { Button, Table, Accordion, Container, Space } from '@mantine/core';
 
 const BundleDetails = ({ bundle }) => {
     const [data, setData] = useState(null);
@@ -35,7 +35,7 @@ const BundleDetails = ({ bundle }) => {
     }, []);
 
     return (
-        <div className='container'>
+        <Container>
             {data && data.bundles.map((bundle, index) => {
                 const networks = bundle.networks.map((network, index) => (
                     <div key={index}>
@@ -54,6 +54,7 @@ const BundleDetails = ({ bundle }) => {
                             </div>
                             <div className='bundle-description'>{bundle.description}</div>
                             {/* <div>{bundle.coverage}</div> */}
+                            <Space h="lg" />
                             <div className='bundle-ip'>Private IP: {bundle.ip_location}</div>
                             <div>
                                 <Accordion >
@@ -78,13 +79,14 @@ const BundleDetails = ({ bundle }) => {
                                 }
                             </Table>
                         </div>
+                        <Space h="lg" />
                         <Button fullWidth variant="filled">
                             Order eSIM
                         </Button>
                     </React.Fragment>
                 );
             })}
-        </div>
+        </Container>
     );
 };
 
