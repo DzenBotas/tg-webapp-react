@@ -52,12 +52,9 @@ const BundleDetails = ({ bundle }) => {
                                 <div className='bundle-title'>{title}</div>
                                 <div className='bundle-image'><img src={bundle.img} alt={bundle.title} /></div>
                             </div>
-                            <Divider size="xs" />
                             <div className='bundle-description'>{bundle.description}</div>
                             {/* <div>{bundle.coverage}</div> */}
-                            <Divider size="xs" />
                             <div className='bundle-ip'>Private IP: {bundle.ip_location}</div>
-                            <Divider size="xs" />
                             <div>
                                 <Accordion radius="xl" defaultValue="Coverage">
                                     <Accordion.Item value="Coverage">
