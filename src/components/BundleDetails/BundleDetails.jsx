@@ -56,7 +56,7 @@ const BundleDetails = ({ bundle }) => {
                             {/* <div>{bundle.coverage}</div> */}
                             <div className='bundle-ip'>Private IP: {bundle.ip_location}</div>
                             <div>
-                                <Accordion radius="xl" defaultValue="Coverage">
+                                <Accordion >
                                     <Accordion.Item value="Coverage">
                                         <Accordion.Control>Coverage</Accordion.Control>
                                         <Accordion.Panel>{networks}</Accordion.Panel>
