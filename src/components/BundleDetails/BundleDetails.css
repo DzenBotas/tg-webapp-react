@@ -42,10 +42,10 @@
     line-height: 1.5;
 }
 
-.bundle-plans {
+/* .bundle-plans {
     padding: 16px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
+} */
 
 .bundle-price {
     display: flex;

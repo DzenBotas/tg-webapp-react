@@ -56,9 +56,9 @@ const BundleDetails = ({ bundle }) => {
                             {/* <div>{bundle.coverage}</div> */}
                             <Space h="lg" />
                             <div className='bundle-ip'>Private IP: {bundle.ip_location}</div>
-                                <Accordion >
-                                    <Accordion.Item value="Coverage" style={{ color: 'var(--tg-theme-text-color)'}}>
-                                        <Accordion.Control>Coverage</Accordion.Control>
+                                <Accordion variant="filled" radius="md">
+                                    <Accordion.Item value="Coverage" >
+                                        <Accordion.Control style={{ color: 'var(--tg-theme-text-color)'}}>Coverage</Accordion.Control>
                                         <Accordion.Panel>{networks}</Accordion.Panel>
                                     </Accordion.Item>
                                 </Accordion>
