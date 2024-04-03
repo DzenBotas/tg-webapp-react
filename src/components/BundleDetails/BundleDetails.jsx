@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import "./BundleDetails.css"
 // import Button from "../Button/Button";
-import { Button, Table } from '@mantine/core';
+import { Button, Table, Divider, Accordion } from '@mantine/core';
 
-const BundleDetails = () => {
+const BundleDetails = ({ bundle }) => {
     const [data, setData] = useState(null);
     const location = useLocation();
     const title = location.state ? location.state.title : 'Default Title';
     // TODO: title check to pass data to fetch data: ['bundle.{title}']. Use switch?
+
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch('https://myaccount.getesim.io/api/v2/search_bundles', {
@@ -36,7 +37,11 @@ const BundleDetails = () => {
     return (
         <div className='container'>
             {data && data.bundles.map((bundle, index) => {
-                // console.log(bundle.networks); // Log bundle.networks for each bundle
+                const networks = bundle.networks.map((network, index) => (
+                    <div key={index}>
+                        {network.title} {network.local_networks}
+                    </div>
+                ));
 
                 return (
                     <React.Fragment key={index}>
@@ -47,14 +52,20 @@ const BundleDetails = () => {
                                 <div className='bundle-title'>{title}</div>
                                 <div className='bundle-image'><img src={bundle.img} alt={bundle.title} /></div>
                             </div>
+                            <Divider size="xs" />
                             <div className='bundle-description'>{bundle.description}</div>
                             {/* <div>{bundle.coverage}</div> */}
+                            <Divider size="xs" />
                             <div className='bundle-ip'>Private IP: {bundle.ip_location}</div>
+                            <Divider size="xs" />
                             <div>
-                                    {bundle.networks && bundle.networks.map((network, index) => (
-                                        <div key={index}>{network.title}</div>
-                                    ))}
-                                </div>                            
+                                <Accordion radius="xl" defaultValue="Coverage">
+                                    <Accordion.Item value="Coverage">
+                                        <Accordion.Control>Coverage</Accordion.Control>
+                                        <Accordion.Panel>{networks}</Accordion.Panel>
+                                    </Accordion.Item>
+                                </Accordion>
+                            </div>
                             <Table className='bundle-plans' horizontalSpacing="xl">
                                 {bundle.refills && Object.values(bundle.refills).map((refill, index) => (
                                     <React.Fragment key={index}>
