@@ -35,7 +35,7 @@ const BundleDetails = ({ bundle }) => {
     }, []);
 
     return (
-        <Container>
+        <Container style={{ backgroundColor: 'var(--tg-theme-bg-color)' }}>
             {data && data.bundles.map((bundle, index) => {
                 const networks = bundle.networks.map((network, index) => (
                     <div key={index}>
@@ -45,7 +45,7 @@ const BundleDetails = ({ bundle }) => {
 
                 return (
                     <React.Fragment key={index}>
-                        <div className="bundle">
+                        <div className="bundle" style={{ backgroundColor: 'var(--tg-theme-secondary-bg-color)' }}>
                             {/* <h1>{title}</h1> */}
                             <div className="bundle-header">
                                 {/* <div className='bundle-title'>{bundle.title}</div> */}
