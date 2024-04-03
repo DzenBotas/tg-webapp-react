@@ -80,7 +80,7 @@ const BundleDetails = ({ bundle }) => {
                             </Table>
                         </div>
                         <Space h="lg" />
-                        <Button fullWidth variant="filled">
+                        <Button style={{ backgroundColor: 'var(--tg-theme-button-color)' }} fullWidth variant="filled">
                             Order eSIM
                         </Button>
                     </React.Fragment>
