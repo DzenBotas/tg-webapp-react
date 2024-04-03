@@ -1,9 +1,9 @@
 .bundle {
     display: flex;
     flex-direction: column;
-    border-radius: 4px;
+    /* border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
+    overflow: hidden; */
     /* margin: 16px; */
     background: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
@@ -24,7 +24,8 @@
 }
 
 .bundle-image img {
-    width: 100px;
+    /* width: 100px; */
+    max-width: 150px;
     height: auto;
     border-radius: 5%;
     object-fit: cover;
@@ -49,5 +50,5 @@
 .bundle-price {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8px;
+    margin: 0px 15px;
 }
