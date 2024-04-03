@@ -35,7 +35,7 @@ const BundleDetails = ({ bundle }) => {
     }, []);
 
     return (
-        <Container style={{ backgroundColor: 'var(--tg-theme-bg-color)' }}>
+        <Container style={{ backgroundColor: 'var(--tg-theme-secondary-bg-color)' }}>
             {data && data.bundles.map((bundle, index) => {
                 const networks = bundle.networks.map((network, index) => (
                     <div key={index}>
@@ -45,7 +45,7 @@ const BundleDetails = ({ bundle }) => {
 
                 return (
                     <React.Fragment key={index}>
-                        <div className="bundle" style={{ backgroundColor: 'var(--tg-theme-secondary-bg-color)' }}>
+                        <div className="bundle" style={{ backgroundColor: 'var(--tg-theme-bg-color)' }}>
                             {/* <h1>{title}</h1> */}
                             <div className="bundle-header">
                                 {/* <div className='bundle-title'>{bundle.title}</div> */}
@@ -56,14 +56,12 @@ const BundleDetails = ({ bundle }) => {
                             {/* <div>{bundle.coverage}</div> */}
                             <Space h="lg" />
                             <div className='bundle-ip'>Private IP: {bundle.ip_location}</div>
-                            <div>
                                 <Accordion >
-                                    <Accordion.Item value="Coverage">
+                                    <Accordion.Item value="Coverage" style={{ color: 'var(--tg-theme-text-color)'}}>
                                         <Accordion.Control>Coverage</Accordion.Control>
                                         <Accordion.Panel>{networks}</Accordion.Panel>
                                     </Accordion.Item>
                                 </Accordion>
-                            </div>
                             <Table className='bundle-plans' horizontalSpacing="xl">
                                 {bundle.refills && Object.values(bundle.refills).map((refill, index) => (
                                     <React.Fragment key={index}>
