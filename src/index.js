@@ -8,7 +8,7 @@ import '@mantine/core/styles.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const theme = createTheme({
     /** Put your mantine theme override here */
-    backgroundColor: 'var(--tg-theme-secondary-bg-color)',
+    // backgroundColor: 'var(--tg-theme-secondary-bg-color)',
     // color: 'var(--tg-theme-text-color)'
   });
 
