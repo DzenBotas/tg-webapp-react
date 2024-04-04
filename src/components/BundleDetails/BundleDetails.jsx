@@ -48,7 +48,7 @@ const BundleDetails = () => {
                     <React.Fragment key={index}>
                         {/* <div className="bundle" style={{ backgroundColor: 'var(--tg-theme-bg-color)' }}> */}
                         <div className="bundle" >
-                            <div className="classes.bundle-header">
+                            <div className={classes.bundle-header}>
                                 {/* <div className='bundle-title'>{bundle.title}</div> */}
                                 <div className='bundle-title'>{title}</div>
                                 <div className='bundle-image'><img src={bundle.img} alt={bundle.title} /></div>
@@ -57,17 +57,17 @@ const BundleDetails = () => {
                             {/* <div>{bundle.coverage}</div> */}
                             <Space h="lg" />
                             <div className='bundle-ip'>Private IP: {bundle.ip_location}</div>
-                                <Accordion variant="filled" radius="md" className='classes.bundle-coverage'>
+                                <Accordion variant="filled" radius="md" className={classes.bundle-coverage}>
                                     <Accordion.Item value="Coverage" >
                                         {/* <Accordion.Control style={{ color: 'var(--tg-theme-text-color)'}}>Coverage</Accordion.Control> */}
                                         <Accordion.Control >Coverage</Accordion.Control>
                                         <Accordion.Panel>{networks}</Accordion.Panel>
                                     </Accordion.Item>
                                 </Accordion>
-                            <Table className='classes.bundle-plans' horizontalSpacing="xl">
+                            <Table className={classes.bundle-plans} horizontalSpacing="xl">
                                 {bundle.refills && Object.values(bundle.refills).map((refill, index) => (
                                     <React.Fragment key={index}>
-                                        <Table.Tr className="classes.bundle-price">
+                                        <Table.Tr className={classes.bundle-price}>
                                             <Table.Td>{refill.title}</Table.Td>
                                             <Table.Td>{refill.price_eur} EUR</Table.Td>
                                         </Table.Tr>
