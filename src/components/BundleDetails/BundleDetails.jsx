@@ -35,7 +35,8 @@ const BundleDetails = ({ bundle }) => {
     }, []);
 
     return (
-        <Container style={{ backgroundColor: 'var(--tg-theme-secondary-bg-color)' }}>
+        // <Container style={{ backgroundColor: 'var(--tg-theme-secondary-bg-color)' }}>
+        <Container >
             {data && data.bundles.map((bundle, index) => {
                 const networks = bundle.networks.map((network, index) => (
                     <div key={index}>
@@ -45,8 +46,8 @@ const BundleDetails = ({ bundle }) => {
 
                 return (
                     <React.Fragment key={index}>
-                        <div className="bundle" style={{ backgroundColor: 'var(--tg-theme-bg-color)' }}>
-                            {/* <h1>{title}</h1> */}
+                        {/* <div className="bundle" style={{ backgroundColor: 'var(--tg-theme-bg-color)' }}> */}
+                        <div className="bundle" >
                             <div className="bundle-header">
                                 {/* <div className='bundle-title'>{bundle.title}</div> */}
                                 <div className='bundle-title'>{title}</div>
@@ -58,7 +59,8 @@ const BundleDetails = ({ bundle }) => {
                             <div className='bundle-ip'>Private IP: {bundle.ip_location}</div>
                                 <Accordion variant="filled" radius="md">
                                     <Accordion.Item value="Coverage" >
-                                        <Accordion.Control style={{ color: 'var(--tg-theme-text-color)'}}>Coverage</Accordion.Control>
+                                        {/* <Accordion.Control style={{ color: 'var(--tg-theme-text-color)'}}>Coverage</Accordion.Control> */}
+                                        <Accordion.Control >Coverage</Accordion.Control>
                                         <Accordion.Panel>{networks}</Accordion.Panel>
                                     </Accordion.Item>
                                 </Accordion>
@@ -78,7 +80,8 @@ const BundleDetails = ({ bundle }) => {
                             </Table>
                         </div>
                         <Space h="lg" />
-                        <Button style={{ backgroundColor: 'var(--tg-theme-button-color)' }} fullWidth variant="filled">
+                        {/* <Button style={{ backgroundColor: 'var(--tg-theme-button-color)' }} fullWidth variant="filled"> */}
+                        <Button fullWidth variant="filled">
                             Order eSIM
                         </Button>
                     </React.Fragment>
