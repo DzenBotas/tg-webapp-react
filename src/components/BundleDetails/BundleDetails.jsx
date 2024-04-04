@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import "./BundleDetails.css"
 // import Button from "../Button/Button";
-import { Button, Table, Accordion, Container, Space } from '@mantine/core';
+import { Button, Table, Accordion, Space } from '@mantine/core';
 
 const BundleDetails = ({ bundle }) => {
     const [data, setData] = useState(null);
