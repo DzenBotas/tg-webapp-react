@@ -52,3 +52,7 @@
     justify-content: space-between;
     margin: 0px 15px;
 }
+
+.container {
+    background-color: var(--tg-theme-secondary-bg-color);
+}
