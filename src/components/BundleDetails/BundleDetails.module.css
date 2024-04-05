@@ -51,7 +51,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0px 15px;
-    border-bottom: var(--tg-theme-bg-color);
+    /* border-bottom: var(--tg-theme-bg-color); */
 }
 
 .bundle-coverage {
