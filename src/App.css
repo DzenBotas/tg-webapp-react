@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: transparent; */
 }
 
-/* body {
-  height: var(--tg-viewport-stable-height, 100hv);
+body {
+  /* height: var(--tg-viewport-stable-height, 100hv); */
+  background-color: var(--tg-theme-secondary-bg-color);
   color: var(--tg-theme-text-color);
-} */
+}
