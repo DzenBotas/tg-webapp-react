@@ -5,6 +5,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     overflow: hidden; */
     /* margin: 16px; */
+    background-color: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
 }
 
@@ -54,7 +55,7 @@
 }
 
 .bundle-coverage {
-    background-color: var(--tg-theme-secondary-bg-color);
+    background-color: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
 }
 
