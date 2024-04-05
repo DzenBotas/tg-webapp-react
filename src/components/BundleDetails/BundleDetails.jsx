@@ -56,15 +56,15 @@ const BundleDetails = () => {
                             <div className={classes['bundle-description']}>{bundle.description}</div>
                             {/* <div>{bundle.coverage}</div> */}
                             <Space h="lg" />
-                            <div className={classes['bundle-ip']}>Private IP: {bundle.ip_location}</div>
+                            <div className={classes['bundle-ip']}><span>Private IP:</span> {bundle.ip_location}</div>
                                 <Accordion variant="filled" radius="md">
                                     <Accordion.Item value="Coverage" className={classes["bundle-coverage"]}>
                                         {/* <Accordion.Control style={{ color: 'var(--tg-theme-text-color)'}}>Coverage</Accordion.Control> */}
-                                        <Accordion.Control style={{color: 'var(--tg-theme-text-color)'}} >Coverage</Accordion.Control>
+                                        <Accordion.Control style={{color: 'var(--tg-theme-text-color)'}}><span>Coverage</span></Accordion.Control>
                                         <Accordion.Panel>{networks}</Accordion.Panel>
                                     </Accordion.Item>
                                 </Accordion>
-                            <Space h="lg" />
+                            <Space h="lg" className={classes.space}/>
                             <Table horizontalSpacing="xl" verticalSpacing="md" borderColor="var(--tg-theme-secondary-bg-color)">
                                 {bundle.refills && Object.values(bundle.refills).map((refill, index) => (
                                     <React.Fragment key={index}>
@@ -82,7 +82,7 @@ const BundleDetails = () => {
                         </div>
                         {/* <Space h="xl" /> */}
                         {/* <Button style={{ backgroundColor: 'var(--tg-theme-button-color)' }} fullWidth variant="filled"> */}
-                        <Button fullWidth variant="filled" className={classes.button} size="lg">
+                        <Button fullWidth variant="filled" className={classes.button} size="lg" radius="xs">
                             Order eSIM
                         </Button>
                     </React.Fragment>

@@ -61,4 +61,14 @@
 
 .button {
     margin: 25px 0;
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+}
+
+span {
+    font-weight: 500;
+}
+
+.space {
+    background-color: var(--tg-theme-secondary-bg-color);
 }
