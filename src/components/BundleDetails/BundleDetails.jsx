@@ -57,10 +57,10 @@ const BundleDetails = () => {
                             {/* <div>{bundle.coverage}</div> */}
                             <Space h="lg" />
                             <div className={classes['bundle-ip']}>Private IP: {bundle.ip_location}</div>
-                                <Accordion variant="filled" radius="md" style={{color: 'var(--tg-theme-text-color)'}}>
+                                <Accordion variant="filled" radius="md">
                                     <Accordion.Item value="Coverage" className={classes["bundle-coverage"]}>
                                         {/* <Accordion.Control style={{ color: 'var(--tg-theme-text-color)'}}>Coverage</Accordion.Control> */}
-                                        <Accordion.Control >Coverage</Accordion.Control>
+                                        <Accordion.Control style={{color: 'var(--tg-theme-text-color)'}} >Coverage</Accordion.Control>
                                         <Accordion.Panel>{networks}</Accordion.Panel>
                                     </Accordion.Item>
                                 </Accordion>
