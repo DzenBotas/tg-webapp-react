@@ -57,14 +57,14 @@ const BundleDetails = () => {
                             {/* <div>{bundle.coverage}</div> */}
                             <Space h="lg" />
                             <div className={classes['bundle-ip']}><span>Private IP:</span> {bundle.ip_location}</div>
-                                <Accordion variant="filled" radius="md">
-                                    <Accordion.Item value="Coverage" className={classes["bundle-coverage"]}>
-                                        {/* <Accordion.Control style={{ color: 'var(--tg-theme-text-color)'}}>Coverage</Accordion.Control> */}
-                                        <Accordion.Control style={{color: 'var(--tg-theme-text-color)'}}><span>Coverage</span></Accordion.Control>
-                                        <Accordion.Panel>{networks}</Accordion.Panel>
-                                    </Accordion.Item>
-                                </Accordion>
-                            <Space h="lg" className={classes.space}/>
+                            <Accordion variant="filled" radius="md">
+                                <Accordion.Item value="Coverage" className={classes["bundle-coverage"]}>
+                                    {/* <Accordion.Control style={{ color: 'var(--tg-theme-text-color)'}}>Coverage</Accordion.Control> */}
+                                    <Accordion.Control style={{ color: 'var(--tg-theme-text-color)' }}><span>Coverage</span></Accordion.Control>
+                                    <Accordion.Panel>{networks}</Accordion.Panel>
+                                </Accordion.Item>
+                            </Accordion>
+                            <Space h="lg" className={classes.space} />
                             <Table horizontalSpacing="xl" verticalSpacing="md" borderColor="var(--tg-theme-secondary-bg-color)">
                                 {bundle.refills && Object.values(bundle.refills).map((refill, index) => (
                                     <React.Fragment key={index}>
