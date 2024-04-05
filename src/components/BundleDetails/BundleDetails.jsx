@@ -57,15 +57,15 @@ const BundleDetails = () => {
                             {/* <div>{bundle.coverage}</div> */}
                             <Space h="lg" />
                             <div className={classes['bundle-ip']}>Private IP: {bundle.ip_location}</div>
-                                <Accordion variant="filled" radius="md" >
-                                    <Accordion.Item value="Coverage"  className={classes["bundle-coverage"]}>
+                                <Accordion variant="filled" radius="md" className={classes["bundle-coverage"]}>
+                                    <Accordion.Item value="Coverage">
                                         {/* <Accordion.Control style={{ color: 'var(--tg-theme-text-color)'}}>Coverage</Accordion.Control> */}
-                                        <Accordion.Control>Coverage</Accordion.Control>
+                                        <Accordion.Control >Coverage</Accordion.Control>
                                         <Accordion.Panel>{networks}</Accordion.Panel>
                                     </Accordion.Item>
                                 </Accordion>
                             <Space h="lg" />
-                            <Table horizontalSpacing="xl" >
+                            <Table horizontalSpacing="xl" verticalSpacing="md">
                                 {bundle.refills && Object.values(bundle.refills).map((refill, index) => (
                                     <React.Fragment key={index}>
                                         <Table.Tr className={classes["bundle-price"]}>
@@ -82,7 +82,7 @@ const BundleDetails = () => {
                         </div>
                         {/* <Space h="xl" /> */}
                         {/* <Button style={{ backgroundColor: 'var(--tg-theme-button-color)' }} fullWidth variant="filled"> */}
-                        <Button fullWidth variant="filled" className={classes.button}>
+                        <Button fullWidth variant="filled" className={classes.button} size="lg">
                             Order eSIM
                         </Button>
                     </React.Fragment>
