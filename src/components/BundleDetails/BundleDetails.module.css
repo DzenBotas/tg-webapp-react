@@ -44,14 +44,14 @@
 }
 
 /* .bundle-plans {
-    padding: 16px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: var(--tg-theme-bg-color);
 } */
 
 .bundle-price {
     display: flex;
     justify-content: space-between;
     margin: 0px 15px;
+    border-bottom: var(--tg-theme-bg-color);
 }
 
 .bundle-coverage {

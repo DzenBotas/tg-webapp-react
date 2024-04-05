@@ -58,17 +58,17 @@ const BundleDetails = () => {
                             <Space h="lg" />
                             <div className={classes['bundle-ip']}>Private IP: {bundle.ip_location}</div>
                                 <Accordion variant="filled" radius="md" >
-                                    <Accordion.Item value="Coverage" >
+                                    <Accordion.Item value="Coverage"  className={classes["bundle-coverage"]}>
                                         {/* <Accordion.Control style={{ color: 'var(--tg-theme-text-color)'}}>Coverage</Accordion.Control> */}
-                                        <Accordion.Control className={classes["bundle-coverage"]}>Coverage</Accordion.Control>
+                                        <Accordion.Control>Coverage</Accordion.Control>
                                         <Accordion.Panel>{networks}</Accordion.Panel>
                                     </Accordion.Item>
                                 </Accordion>
                             <Space h="lg" />
-                            <Table className="bundle-plans" horizontalSpacing="xl" borderColor="var(--tg-theme-bg-color)">
+                            <Table horizontalSpacing="xl" >
                                 {bundle.refills && Object.values(bundle.refills).map((refill, index) => (
                                     <React.Fragment key={index}>
-                                        <Table.Tr className="bundle-price">
+                                        <Table.Tr className={classes["bundle-price"]}>
                                             <Table.Td>{refill.title}</Table.Td>
                                             <Table.Td>{refill.price_eur} EUR</Table.Td>
                                         </Table.Tr>
