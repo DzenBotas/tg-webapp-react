@@ -68,7 +68,7 @@ const BundleDetails = () => {
                             <Table horizontalSpacing="xl" verticalSpacing="md">
                                 {bundle.refills && Object.values(bundle.refills).map((refill, index) => (
                                     <React.Fragment key={index}>
-                                        <Table.Tr className={classes["bundle-price"]} style={{borderBottom: 'var(--tg-theme-bg-color)'}}>
+                                        <Table.Tr className={classes["bundle-price"]} borderColor="blue">
                                             <Table.Td>{refill.title}</Table.Td>
                                             <Table.Td>{refill.price_eur} EUR</Table.Td>
                                         </Table.Tr>
