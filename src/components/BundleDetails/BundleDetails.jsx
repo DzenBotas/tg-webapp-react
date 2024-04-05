@@ -65,10 +65,10 @@ const BundleDetails = () => {
                                     </Accordion.Item>
                                 </Accordion>
                             <Space h="lg" />
-                            <Table horizontalSpacing="xl" verticalSpacing="md">
+                            <Table horizontalSpacing="xl" verticalSpacing="md" borderColor="var(--tg-theme-bg-color)">
                                 {bundle.refills && Object.values(bundle.refills).map((refill, index) => (
                                     <React.Fragment key={index}>
-                                        <Table.Tr className={classes["bundle-price"]} borderColor="blue">
+                                        <Table.Tr className={classes["bundle-price"]}>
                                             <Table.Td>{refill.title}</Table.Td>
                                             <Table.Td>{refill.price_eur} EUR</Table.Td>
                                         </Table.Tr>
