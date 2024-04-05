@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import "./BundleDetails.css"
 // import Button from "../Button/Button";
 import { Button, Table, Accordion, Space } from '@mantine/core';
+import classes from "./BundleDetails.module.css"
 
 const BundleDetails = () => {
     const [data, setData] = useState(null);
@@ -47,16 +47,16 @@ const BundleDetails = () => {
                 return (
                     <React.Fragment key={index}>
                         {/* <div className="bundle" style={{ backgroundColor: 'var(--tg-theme-bg-color)' }}> */}
-                        <div className="bundle" >
-                            <div className="bundle-header">
+                        <div className={classes.bundle} >
+                            <div className={classes["bundle-header"]}>
                                 {/* <div className='bundle-title'>{bundle.title}</div> */}
-                                <div className='bundle-title'>{title}</div>
-                                <div className='bundle-image'><img src={bundle.img} alt={bundle.title} /></div>
+                                <div className={classes['bundle-title']}>{title}</div>
+                                <div className={classes['bundle-image']}><img src={bundle.img} alt={bundle.title} /></div>
                             </div>
-                            <div className='bundle-description'>{bundle.description}</div>
+                            <div className={classes['bundle-description']}>{bundle.description}</div>
                             {/* <div>{bundle.coverage}</div> */}
                             <Space h="lg" />
-                            <div className='bundle-ip'>Private IP: {bundle.ip_location}</div>
+                            <div className={classes['bundle-ip']}>Private IP: {bundle.ip_location}</div>
                                 <Accordion variant="filled" radius="md" >
                                     <Accordion.Item value="Coverage" >
                                         {/* <Accordion.Control style={{ color: 'var(--tg-theme-text-color)'}}>Coverage</Accordion.Control> */}
@@ -79,9 +79,9 @@ const BundleDetails = () => {
                                 }
                             </Table>
                         </div>
-                        <Space h="lg" />
+                        {/* <Space h="xl" /> */}
                         {/* <Button style={{ backgroundColor: 'var(--tg-theme-button-color)' }} fullWidth variant="filled"> */}
-                        <Button fullWidth variant="filled">
+                        <Button fullWidth variant="filled" className={classes.button}>
                             Order eSIM
                         </Button>
                     </React.Fragment>
