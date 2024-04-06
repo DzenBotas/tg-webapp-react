@@ -10,6 +10,7 @@ const theme = createTheme({
     /** Put your mantine theme override here */
     // backgroundColor: 'var(--tg-theme-secondary-bg-color)',
     // color: 'var(--tg-theme-text-color)'
+    fontFamily: 'Roboto, sans-serif'
   });
 
 root.render(
