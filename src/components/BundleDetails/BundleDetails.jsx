@@ -38,11 +38,16 @@ const BundleDetails = () => {
         // <Container style={{ backgroundColor: 'var(--tg-theme-secondary-bg-color)' }}>
         <div style={{ backgroundColor: 'var(--tg-theme-secondary-bg-color)' }}>
             {data && data.bundles.map((bundle, index) => {
-                const networks = bundle.networks.map((network, index) => (
-                    <div key={index}>
-                        {network.title} {network.local_networks}
+            const networks = bundle.networks.map((network, index) => (
+                <div key={index} className={classes.network}>
+                    <div className={classes.title}>{network.title} </div>
+                    <div className={classes["local-networks"]}>
+                        {network.local_networks.map((localNetwork, i) => (
+                            <div key={i}>{localNetwork}</div>
+                        ))}
                     </div>
-                ));
+                </div>
+            ));
 
                 return (
                     <React.Fragment key={index}>
