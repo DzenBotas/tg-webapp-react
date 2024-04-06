@@ -39,13 +39,13 @@ const BundleDetails = () => {
         <div style={{ backgroundColor: 'var(--tg-theme-secondary-bg-color)' }}>
             {data && data.bundles.map((bundle, index) => {
             const networks = bundle.networks.map((network, index) => (
-                <div key={index} className={classes.network}>
-                    <div className={classes.title}>{network.title} </div>
-                    <div className={classes["local-networks"]}>
+                <div key={index} className={classes.country}>
+                    <div className={classes.network}>{network.title} </div>
+                    {/* <div className={classes["local-networks"]}> */}
                         {network.local_networks.map((localNetwork, i) => (
                             <div key={i}>{localNetwork}</div>
                         ))}
-                    </div>
+                    {/* </div> */}
                 </div>
             ));
 

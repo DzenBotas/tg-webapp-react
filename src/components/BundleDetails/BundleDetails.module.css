@@ -72,3 +72,11 @@ span {
 .space {
     background-color: var(--tg-theme-secondary-bg-color);
 }
+
+.network {
+    background-color: aqua;
+}
+
+.country {
+    background-color: beige;
+}
