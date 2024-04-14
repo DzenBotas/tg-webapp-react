@@ -5,12 +5,12 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     overflow: hidden; */
     /* margin: 16px; */
-    background-color: var(--tg-theme-bg-color);
-    color: var(--tg-theme-text-color);
+    background-color: var(--tg-theme-bg-color), #212121;
+    color: var(--tg-theme-text-color), #ffffff;
 }
 
 .bundle-header {
-    background-color: var(--tg-section-bg-color);
+    background-color: var(--tg-section-bg-color), #212121;
     display: flex;
     align-items: center;
     padding: 16px;
@@ -21,7 +21,7 @@
     margin-left: 16px;
     font-size: 20px;
     font-weight: 500;
-    color: var(--tg-theme-section-header-text-color);
+    color: var(--tg-theme-section-header-text-color, #8774e1);
 }
 
 .bundle-image img {
@@ -34,7 +34,7 @@
 
 .bundle-description {
     padding: 0 16px;
-    color: var(--tg-theme-hint-color);
+    color: var(--tg-theme-hint-color), #aaaaaa;
     line-height: 1.5;
 }
 
@@ -55,14 +55,14 @@
 }
 
 .bundle-coverage {
-    background-color: var(--tg-theme-bg-color);
-    color: var(--tg-theme-text-color);
+    background-color: var(--tg-theme-bg-color), #212121;
+    color: var(--tg-theme-text-color), #ffffff;
 }
 
 .button {
     margin: 25px 0;
-    background: var(--tg-theme-button-color);
-    color: var(--tg-theme-button-text-color);
+    background: var(--tg-theme-button-color), #8774e1;
+    color: var(--tg-theme-button-text-color), #ffffff;
 }
 
 span {
