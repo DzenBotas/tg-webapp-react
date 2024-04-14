@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 // import Button from "../Button/Button";
-import { Button, Table, Accordion, Space } from '@mantine/core';
+import { Button, Table, Accordion, Space, Paper } from '@mantine/core';
 import classes from "./BundleDetails.module.css"
 
 const BundleDetails = () => {
