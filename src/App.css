@@ -4,8 +4,3 @@
   box-sizing: border-box;
 }
 
-body {
-  /* height: var(--tg-viewport-stable-height, 100hv); */
-  background-color: var(--tg-theme-secondary-bg-color);
-  color: var(--tg-theme-text-color);
-}
