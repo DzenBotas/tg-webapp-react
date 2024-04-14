@@ -80,3 +80,8 @@ span {
 .country {
     background-color: beige;
 }
+
+.bundle-section {
+    margin: 0 15px;
+    border-radius: 8px;
+}

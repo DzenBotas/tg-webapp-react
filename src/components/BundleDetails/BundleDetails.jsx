@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 // import Button from "../Button/Button";
-import { Button, Table, Accordion, Space, Paper } from '@mantine/core';
+import { Button, Table, Accordion, Space } from '@mantine/core';
 import classes from "./BundleDetails.module.css"
 
 const BundleDetails = () => {
@@ -53,7 +53,7 @@ const BundleDetails = () => {
                     <React.Fragment key={index}>
                         {/* <div className="bundle" style={{ backgroundColor: 'var(--tg-theme-bg-color)' }}> */}
                         <div className={classes.bundle} >
-                            <Paper radius="lg">
+                            <section className="bundle-section">
                                 <div className={classes["bundle-header"]}>
                                     {/* <div className='bundle-title'>{bundle.title}</div> */}
                                     <div className={classes['bundle-title']}>{title}</div>
@@ -61,35 +61,31 @@ const BundleDetails = () => {
                                 </div>
                                 <div className={classes['bundle-description']}>{bundle.description}</div>
                                 {/* <div>{bundle.coverage}</div> */}
-                            </Paper>
+                            </section>
                             <Space h="lg" />
                             <div className={classes['bundle-ip']}><span>Private IP:</span> {bundle.ip_location}</div>
-                            <Paper radius="lg">
-                                <Accordion variant="filled" radius="md">
-                                    <Accordion.Item value="Coverage" className={classes["bundle-coverage"]}>
-                                        {/* <Accordion.Control style={{ color: 'var(--tg-theme-text-color)'}}>Coverage</Accordion.Control> */}
-                                        <Accordion.Control style={{ color: 'var(--tg-theme-text-color)' }}><span>Coverage</span></Accordion.Control>
-                                        <Accordion.Panel>{networks}</Accordion.Panel>
-                                    </Accordion.Item>
-                                </Accordion>
-                            </Paper>
+                            <Accordion variant="filled" radius="md">
+                                <Accordion.Item value="Coverage" className={classes["bundle-coverage"]}>
+                                    {/* <Accordion.Control style={{ color: 'var(--tg-theme-text-color)'}}>Coverage</Accordion.Control> */}
+                                    <Accordion.Control style={{ color: 'var(--tg-theme-text-color)' }}><span>Coverage</span></Accordion.Control>
+                                    <Accordion.Panel>{networks}</Accordion.Panel>
+                                </Accordion.Item>
+                            </Accordion>
                             <Space h="lg" className={classes.space} />
-                            <Paper radius="lg">
-                                <Table horizontalSpacing="xl" verticalSpacing="md" borderColor="var(--tg-theme-secondary-bg-color)">
-                                    {bundle.refills && Object.values(bundle.refills).map((refill, index) => (
-                                        <React.Fragment key={index}>
-                                            <Table.Tr className={classes["bundle-price"]}>
-                                                <Table.Td>{refill.title}</Table.Td>
-                                                <Table.Td>{refill.price_eur} EUR</Table.Td>
-                                            </Table.Tr>
-                                            {/* <div>{refill.amount_mb}</div>
-                                                <div>{refill.days}</div>
-                                                <div>{refill.price_usd}</div> */}
-                                        </React.Fragment>
-                                    ))
-                                    }
-                                </Table>
-                            </Paper>
+                            <Table horizontalSpacing="xl" verticalSpacing="md" borderColor="var(--tg-theme-secondary-bg-color)">
+                                {bundle.refills && Object.values(bundle.refills).map((refill, index) => (
+                                    <React.Fragment key={index}>
+                                        <Table.Tr className={classes["bundle-price"]}>
+                                            <Table.Td>{refill.title}</Table.Td>
+                                            <Table.Td>{refill.price_eur} EUR</Table.Td>
+                                        </Table.Tr>
+                                        {/* <div>{refill.amount_mb}</div>
+                                            <div>{refill.days}</div>
+                                            <div>{refill.price_usd}</div> */}
+                                    </React.Fragment>
+                                ))
+                                }
+                            </Table>
                         </div>
                         {/* <Space h="xl" /> */}
                         {/* <Button style={{ backgroundColor: 'var(--tg-theme-button-color)' }} fullWidth variant="filled"> */}
