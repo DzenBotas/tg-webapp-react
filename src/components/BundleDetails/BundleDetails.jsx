@@ -53,7 +53,7 @@ const BundleDetails = () => {
                     <React.Fragment key={index}>
                         {/* <div className="bundle" style={{ backgroundColor: 'var(--tg-theme-bg-color)' }}> */}
                         <div className={classes.bundle} >
-                            <section className="bundle-section">
+                            <section className={classes["bundle-section"]}>
                                 <div className={classes["bundle-header"]}>
                                     {/* <div className='bundle-title'>{bundle.title}</div> */}
                                     <div className={classes['bundle-title']}>{title}</div>
