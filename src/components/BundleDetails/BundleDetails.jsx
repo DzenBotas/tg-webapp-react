@@ -60,7 +60,7 @@ const BundleDetails = () => {
                                 </div>
                                 <div className={classes['bundle-description']}>{bundle.description}</div>
                                 {/* <div>{bundle.coverage}</div> */}
-                            <Space h="lg" />
+                            <Space h="lg" className={classes.space} />
                             <div className={classes['bundle-ip']}><span>Private IP:</span> {bundle.ip_location}</div>
                             <Accordion variant="filled" radius="md">
                                 <Accordion.Item value="Coverage" className={classes["bundle-coverage"]}>
@@ -85,8 +85,7 @@ const BundleDetails = () => {
                                 }
                             </Table>
                         </div>
-                        {/* <Space h="xl" /> */}
-                        {/* <Button style={{ backgroundColor: 'var(--tg-theme-button-color)' }} fullWidth variant="filled"> */}
+                        <Space h="lg" className={classes.space} />
                         <Button fullWidth variant="filled" className={classes.button} size="lg" radius="xs">
                             Order eSIM
                         </Button>
