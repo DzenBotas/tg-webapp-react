@@ -70,7 +70,7 @@ const BundleDetails = () => {
                                 </Accordion.Item>
                             </Accordion>
                             <Space h="lg" className={classes.space} />
-                            <Table horizontalSpacing="xl" verticalSpacing="md" borderColor="var(--tg-theme-secondary-bg-color)">
+                            <Table horizontalSpacing="xl" verticalSpacing="md" borderColor="var(--tg-theme-bg-color)">
                                 {bundle.refills && Object.values(bundle.refills).map((refill, index) => (
                                     <React.Fragment key={index}>
                                         <Table.Tr className={classes["bundle-price"]}>
