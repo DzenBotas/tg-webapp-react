@@ -53,7 +53,6 @@ const BundleDetails = () => {
                     <React.Fragment key={index}>
                         {/* <div className="bundle" style={{ backgroundColor: 'var(--tg-theme-bg-color)' }}> */}
                         <div className={classes.bundle} >
-                            <section className={classes["bundle-section"]}>
                                 <div className={classes["bundle-header"]}>
                                     {/* <div className='bundle-title'>{bundle.title}</div> */}
                                     <div className={classes['bundle-title']}>{title}</div>
@@ -61,7 +60,6 @@ const BundleDetails = () => {
                                 </div>
                                 <div className={classes['bundle-description']}>{bundle.description}</div>
                                 {/* <div>{bundle.coverage}</div> */}
-                            </section>
                             <Space h="lg" />
                             <div className={classes['bundle-ip']}><span>Private IP:</span> {bundle.ip_location}</div>
                             <Accordion variant="filled" radius="md">
