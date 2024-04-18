@@ -9,9 +9,9 @@
     color: var(--tg-theme-text-color); */
 }
 
-/* .bundle-coverage, .bundle-ip, .bundle-description, .bundle-price, .bundle-header {
-    background-color: var(--tg-section-bg-color);
-} */
+.bundle-coverage, .bundle-ip, .bundle-description, .bundle-price, .bundle-header {
+    background-color: var(--tg-theme-section-bg-color);
+}
 
 .bundle-header {
     display: flex;
@@ -20,7 +20,7 @@
     margin: 16px;
     border-radius: 8px;
     padding: 16px;
-    background-color: var(--tg-section-bg-color);
+    /* background-color: var(--tg-theme-section-bg-color); */
 }
 
 .bundle-title {
