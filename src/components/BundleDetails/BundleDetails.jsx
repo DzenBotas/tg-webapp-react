@@ -36,7 +36,7 @@ const BundleDetails = () => {
 
     return (
         // <Container style={{ backgroundColor: 'var(--tg-theme-secondary-bg-color)' }}>
-        <div style={{ backgroundColor: 'var(--tg-theme-secondary-bg-color)' }}>
+        <div >
             {data && data.bundles.map((bundle, index) => {
                 const networks = bundle.networks.map((network, index) => (
                     <div key={index} className={classes.country}>
