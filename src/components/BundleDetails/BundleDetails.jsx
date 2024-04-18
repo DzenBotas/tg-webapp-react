@@ -38,28 +38,26 @@ const BundleDetails = () => {
         // <Container style={{ backgroundColor: 'var(--tg-theme-secondary-bg-color)' }}>
         <div style={{ backgroundColor: 'var(--tg-theme-secondary-bg-color)' }}>
             {data && data.bundles.map((bundle, index) => {
-            const networks = bundle.networks.map((network, index) => (
-                <div key={index} className={classes.country}>
-                    <div className={classes.network}>{network.title} </div>
-                    {/* <div className={classes["local-networks"]}> */}
+                const networks = bundle.networks.map((network, index) => (
+                    <div key={index} className={classes.country}>
+                        <div className={classes.network}>{network.title} </div>
                         {network.local_networks.map((localNetwork, i) => (
                             <div key={i}>{localNetwork}</div>
                         ))}
-                    {/* </div> */}
-                </div>
-            ));
+                    </div>
+                ));
 
                 return (
                     <React.Fragment key={index}>
                         {/* <div className="bundle" style={{ backgroundColor: 'var(--tg-theme-bg-color)' }}> */}
                         <div className={classes.bundle} >
-                                <div className={classes["bundle-header"]}>
-                                    {/* <div className='bundle-title'>{bundle.title}</div> */}
-                                    <div className={classes['bundle-title']}>{title}</div>
-                                    <div className={classes['bundle-image']}><img src={bundle.img} alt={bundle.title} /></div>
-                                </div>
-                                <div className={classes['bundle-description']}>{bundle.description}</div>
-                                {/* <div>{bundle.coverage}</div> */}
+                            <div className={classes["bundle-header"]}>
+                                {/* <div className='bundle-title'>{bundle.title}</div> */}
+                                <div className={classes['bundle-title']}>{title}</div>
+                                <div className={classes['bundle-image']}><img src={bundle.img} alt={bundle.title} /></div>
+                            </div>
+                            <div className={classes['bundle-description']}>{bundle.description}</div>
+                            {/* <div>{bundle.coverage}</div> */}
                             <Space h="lg" className={classes.space} />
                             <div className={classes['bundle-ip']}><span>Private IP:</span> {bundle.ip_location}</div>
                             <Accordion variant="filled" radius="md">
@@ -84,11 +82,12 @@ const BundleDetails = () => {
                                 ))
                                 }
                             </Table>
-                        </div>
                         <Space h="lg" className={classes.space} />
                         <Button fullWidth variant="filled" className={classes.button} size="lg" radius="xs">
                             Order eSIM
                         </Button>
+                        </div>  
+                         {/* end bundle */}
                     </React.Fragment>
                 );
             })}

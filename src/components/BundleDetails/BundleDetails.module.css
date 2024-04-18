@@ -53,6 +53,7 @@
 }
 
 .bundle-coverage {
+    padding: 0 16px;
     color: var(--tg-theme-text-color);
 }
 

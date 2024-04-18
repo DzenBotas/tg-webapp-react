@@ -2,7 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { createTheme, MantineProvider } from '@mantine/core';
-import '@mantine/core/styles.css';
+// import '@mantine/core/styles.css';
+import '@mantine/core/styles/global.css';
+import '@mantine/core/styles/Accordion.css';
+import '@mantine/core/styles/UnstyledButton.css';
+import '@mantine/core/styles/Button.css';
+import '@mantine/core/styles/Table.css';
+// import '@mantine/core/styles/Space.css';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
