@@ -8,7 +8,7 @@ import '@mantine/core/styles/Accordion.css';
 import '@mantine/core/styles/UnstyledButton.css';
 import '@mantine/core/styles/Button.css';
 import '@mantine/core/styles/Table.css';
-// import '@mantine/core/styles/Space.css';
+import '@mantine/core/styles/Container.css';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
