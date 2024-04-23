@@ -1,13 +1,11 @@
-.bundle {
-    display: flex;
-    flex-direction: column;
-    /* border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    overflow: hidden; */
-    /* margin: 16px; */
-    /* background-color: var(--tg-theme-secondary-bg-color);
-    color: var(--tg-theme-text-color); */
+@layer base {
+    .bundle {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
+
 
 .bundle-coverage, .bundle-ip, .bundle-description, .bundle-price, .bundle-header {
     background-color: var(--tg-theme-section-bg-color);
