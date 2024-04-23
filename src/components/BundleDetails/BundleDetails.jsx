@@ -51,15 +51,14 @@ const BundleDetails = () => {
                     <React.Fragment key={index}>
                         {/* <div className="bundle" style={{ backgroundColor: 'var(--tg-theme-bg-color)' }}> */}
                         <div className={classes.bundle} >
-                            {/* Header */}
-                            <Container className={classes["bundle-header"]}>
+                            {/* Header - Title, Image, Description*/}
+                            <section className={classes["bundle-header"]}>
                                 {/* <div className='bundle-title'>{bundle.title}</div> */}
                                 <div className={classes['bundle-title']}>{title}</div>
                                 <div className={classes['bundle-image']}><img src={bundle.img} alt={bundle.title} /></div>
-                            </Container>
-                            {/* Description and IP */}
-                            <div className={classes['bundle-description']}>{bundle.description}</div>
-                            {/* <div>{bundle.coverage}</div> */}
+                                <div className={classes['bundle-description']}>{bundle.description}</div>
+                            </section>
+                            {/* Network - IP, Coverage */}
                             <Space h="lg" className={classes.space} />
                             <div className={classes['bundle-ip']}><span>Private IP:</span> {bundle.ip_location}</div>
                             {/* Accordion */}
