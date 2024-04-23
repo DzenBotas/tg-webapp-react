@@ -53,9 +53,10 @@ const BundleDetails = () => {
                         <div className={classes.bundle} >
                             {/* Header - Title, Image, Description*/}
                             <section className={classes["bundle-header"]}>
-                                {/* <div className='bundle-title'>{bundle.title}</div> */}
-                                <div className={classes['bundle-title']}>{title}</div>
-                                <div className={classes['bundle-image']}><img src={bundle.img} alt={bundle.title} /></div>
+                                <div className={classes['bundle-header-top']}>
+                                    <div className={classes['bundle-title']}>{title}</div>
+                                    <div className={classes['bundle-image']}><img src={bundle.img} alt={bundle.title} /></div>
+                                </div>    
                                 <div className={classes['bundle-description']}>{bundle.description}</div>
                             </section>
                             {/* Network - IP, Coverage */}
