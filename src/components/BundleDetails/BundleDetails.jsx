@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 // import Button from "../Button/Button";
-import { Button, Table, Accordion, Space } from '@mantine/core';
+import { Button, Table, Accordion } from '@mantine/core';
 import classes from "./BundleDetails.module.css"
 
 const BundleDetails = () => {
@@ -60,7 +60,7 @@ const BundleDetails = () => {
                                 <div className={classes['bundle-description']}>{bundle.description}</div>
                             </section>
                             {/* Network - IP, Coverage */}
-                            <Space h="lg" className={classes.space} />
+                 
                             <div className={classes['bundle-ip']}><span>Private IP:</span> {bundle.ip_location}</div>
                             {/* Accordion */}
                             <Accordion variant="filled" radius="md">
@@ -70,7 +70,6 @@ const BundleDetails = () => {
                                     <Accordion.Panel>{networks}</Accordion.Panel>
                                 </Accordion.Item>
                             </Accordion>
-                            <Space h="lg" className={classes.space} />
                             {/* Price table */}
                             <Table horizontalSpacing="xl" verticalSpacing="md" borderColor="var(--tg-theme-bg-color)">
                                 {bundle.refills && Object.values(bundle.refills).map((refill, index) => (
@@ -83,7 +82,6 @@ const BundleDetails = () => {
                                 ))
                                 }
                             </Table>
-                        <Space h="lg" className={classes.space} />
                         <Button fullWidth variant="filled" className={classes.button} size="lg" radius="xs">
                             Order eSIM
                         </Button>
