@@ -6,7 +6,6 @@
 
 }
 
-
 .bundle-coverage, .bundle-ip, .bundle-description, .bundle-price, .bundle-header {
     background-color: var(--tg-theme-section-bg-color);
 }
