@@ -3,11 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Product.css';
 
 const titleToFilename = (title) => {
-    const filename = title.replace(/ & /g, "_").replace(/ /g, "_").toLowerCase();
-    return [filename + '.jpeg', filename + '.jpg', filename + '.png']
-        .map(encodeURIComponent)
-        .map(uriEncoded => `https://vps-ed04f1ea.vps.ovh.net/images/${uriEncoded}`)
-        .find(url => fetch(url).then(res => res.ok));
+    return encodeURIComponent(title.replace(/ & /g, "_").replace(/ /g, "_").toLowerCase()) + '.jpeg';
 }
 
 const Product = ({product, className }) => {
