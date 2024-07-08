@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Link, useNavigate } from 'react-router-dom';
 import './Product.css';
+import { SlArrowRight } from "react-icons/sl";
 
 const titleToFilename = (title) => {
     return encodeURIComponent(title.replace(/ & /g, "_").replace(/ /g, "_").toLowerCase()) + '.jpeg';
@@ -19,10 +20,15 @@ const Product = ({product, className }) => {
     return (
         <div className={'product ' + className}>
             <img className={'img'} src={imageUrl} alt={product.title}/>
-            <div className={'title'}><strong>{product.title}</strong></div>
-            {/* <div className={'description'}>{product.description}</div> */}
-            <div className={'price'}>
-                <span><b>{product.price}</b></span>
+            <div className="card-title">
+                <div className={'title'}><strong>{product.title}</strong></div>
+                {/* <div className={'description'}>{product.description}</div> */}
+                <div className={'price'}>
+                    <span><b>{product.price}</b></span>
+                </div>
+            </div>
+            <div classs="more-btn">
+                <SlArrowRight />
             </div>
             {/* <div className="info-links">
                 <Link to="/devices">Supported devices</Link>
