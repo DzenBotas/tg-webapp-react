@@ -20,7 +20,7 @@ const handleOnClick = (event) => {
         <div className={'product ' + className}>
             <img className={'img'} src={imageUrl} alt={product.title}/>
             <div className={'title'}><strong>{product.title}</strong></div>
-            {/* <div className={'description'}>{product.description}</div> */}
+            <div className={'description'}>{product.description}</div>
             <div className={'price'}>
                 <span><b>{product.price}</b></span>
             </div>
