@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Product.css';
 
 const titleToFilename = (title) => {
@@ -24,10 +24,10 @@ const handleOnClick = (event) => {
             <div className={'price'}>
                 <span><b>{product.price}</b></span>
             </div>
-            {/* <div className="info-links">
+            <div className="info-links">
                 <Link to="/devices">Supported devices</Link>
                 <a href="/bundle_details" onClick={handleOnClick}>See details</a>
-            </div> */}
+            </div>
         </div>
     );
 };
