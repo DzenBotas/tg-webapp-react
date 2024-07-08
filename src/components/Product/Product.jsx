@@ -24,10 +24,10 @@ const Product = ({product, className }) => {
                 <div className={'title'}><strong>{product.title}</strong></div>
                 {/* <div className={'description'}>{product.description}</div> */}
                 <div className={'price'}>
-                    <span><b>{product.price}</b></span>
+                    <span>{product.price}</span>
                 </div>
             </div>
-            <div classs="more-btn">
+            <div className="more-btn">
                 <SlArrowRight />
             </div>
             {/* <div className="info-links">
